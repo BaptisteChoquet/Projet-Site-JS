@@ -1,11 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
-        <title>Série 3</title>
-    </head>
-    <body>
+
+<link rel="stylesheet" href="projet.css">
+
+<video autoplay loop id="myVideo">
+    <source src="Desktop/Terror in Resonance - Bande annonce HD VOST hd.m4v" type="video/mp4">
+  </video>
+  
+  
+  
+  <div class="content">
+    <h1>Terror in Resonance</h1>
+    <p>Un jour d'été, une bombe explose soudainement au centre de Tokyo et les coupables de cet acte terroriste ne sont autres que deux jeunes adolescents se faisant appeler "Sphinx".
+        Mais cet événement n'est que le prélude d'un énorme jeu lancé par ce même duo, impliquant la population japonaise toute entière... </p>
+   
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <input type="range" onclick="Function1()" id="volume" class="myplayer_slide" min="0" max="1"> </input>
+  </div>
+  
+  <script>
+   
+    var video = document.getElementById("myVideo");
+    
+    
+    var btn = document.getElementById("myBtn");
+    var slide = document.getElementById("range")
+
+
+    
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+      
+    function Function1() {
+    if (slide=0) {
+        video.muted();
+        slide.innerHTML = "Muted";
+    }else{
+        video.demuted();
+        slide.innerHTML = "Demuted";
+
         
-    </body>
-</html>
+    }
+}
+    </script>
+    
