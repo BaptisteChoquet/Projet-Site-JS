@@ -1,0 +1,54 @@
+body {
+    background-color: #FCF9F8;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 6em;
+    margin-left: 2em;
+    
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4em;
+    font-weight: lighter;
+    margin-left: 10em;
+}
+
+#myVideo {
+    height: 20em;
+    width: 30em;
+}
+
+.videofamille {
+   align-items: right;
+    height: 20em;
+    width: 30em;
+    background: src="free-stock-video-of-family-watching-tv_copie.mp4";
+}
+
+.bloc-videos {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 15em;
+
+}
+
+#videocommunity {
+
+    height: 10em;
+    width: 20em;
+}
+
+#videodame {
+
+    height: 10em;
+    width: 20em;
+}
+
+#videoterror {
+    height: 10em;
+    width: 20em;
+}
