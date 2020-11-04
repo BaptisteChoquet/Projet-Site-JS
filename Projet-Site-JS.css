@@ -2,6 +2,11 @@ body {
     background-color: #FCF9F8;
 }
 
+.nav-cat {
+    display: inline;
+    text-align: end;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 6em;
