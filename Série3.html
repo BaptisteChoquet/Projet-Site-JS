@@ -1,31 +1,46 @@
-
+<!-- The video -->
 <link rel="stylesheet" href="projet.css">
 
 <video autoplay loop id="myVideo">
     <source src="Desktop/Terror in Resonance - Bande annonce HD VOST hd.m4v" type="video/mp4">
+      <source src="Desktop/Terror in Resonance - Bande annonce HD VOST hd.ogg" type="video/ogg">
   </video>
   
   
-  
+  <!-- Optional: some overlay text to describe the video -->
   <div class="content">
     <h1>Terror in Resonance</h1>
     <p>Un jour d'été, une bombe explose soudainement au centre de Tokyo et les coupables de cet acte terroriste ne sont autres que deux jeunes adolescents se faisant appeler "Sphinx".
         Mais cet événement n'est que le prélude d'un énorme jeu lancé par ce même duo, impliquant la population japonaise toute entière... </p>
-   
+    <!-- Use a button to pause/play the video with JavaScript -->
     <button id="myBtn" onclick="myFunction()">Pause</button>
-    <input type="range" onclick="Function1()" id="volume" class="myplayer_slide" min="0" max="1"> </input>
+    <button id="Fullscreen" onclick="openFullscreen();">Fullscreen Mode</button>
   </div>
+
+
+  <script>
+    var elem = document.getElementById("myVideo");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
   
   <script>
-   
+    //Get the video
     var video = document.getElementById("myVideo");
     
-    
+    // Get the button
     var btn = document.getElementById("myBtn");
-    var slide = document.getElementById("range")
 
 
-      function myFunction() {
+    // Pause and play the video, and change the button text
+    function myFunction() {
       if (video.paused) {
         video.play();
         btn.innerHTML = "Pause";
@@ -34,16 +49,10 @@
         btn.innerHTML = "Play";
       }
     }
-    function Function1() {
-    if (slide=0) {
-        video.muted();
-        slide.innerHTML = "Muted";
-    }else{
-        video.demuted();
-        slide.innerHTML = "Demuted";
-
-        
-    }
-}
     </script>
+    
+
+
+
+
     
