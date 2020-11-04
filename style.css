@@ -1,3 +1,44 @@
+@font-face {
+    font-family: Futura;
+    src: url("Futura.ttc");
+}
+
+html{
+    font-family: Futura, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Community{
+    display: block;
+    align-items: stretch;
+    height: 33%;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+#Community text{
+    margin-block-end: 5%;
+}
+
+#Série2{
+    display: block;
+    align-items: stretch;
+    height: 33%;
+    width: 100%;
+}
+
+#Série3{
+    display: block;
+    align-items: stretch;
+    height: 33%;
+    width: 100%;
+}
+
 #myVideo {
     position: absolute;
     top: 0;
