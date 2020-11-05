@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css"/>
-        <title>Série 1</title>
+        <title>Community</title>
     </head>
     <body>
         <video autoplay muted loop id="myVideo">
@@ -12,6 +12,26 @@
         <div class="content">
             <h1>Community</h1>
             <p>Jeff est avocat. Mais Jeff doit surtout retourner à l'université car son certificat a été invalidé. Entre les femmes au foyer fraîchement divorcées et ceux qui reprennent les études pour garder leur esprit actif, Jeff intègre une bande de joyeux drilles qui découvre les joies de la vie sur le campus. Ils en apprennent plus sur eux-mêmes que sur les cours qu'ils suivent...</p>
-          </div>
+            <button id="NextBtn" onclick="nextFunction()">Série suivante</button>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <button id="Fullscreen" onclick="openFullscreen();">Fullscreen Mode</button>
+        </div>
+        <div class="rate">
+                <p>Notez cette série</p>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+        </div>
     </body>
 </html>
+
+<script src="Community.js">
+
+</script>

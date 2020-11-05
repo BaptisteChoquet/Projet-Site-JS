@@ -1,1 +1,5 @@
-let video = document.getElementById("myVideo");
+
+
+
+localStorage.setItem (Community.html);
+localStorage.setItem (lejeudeladame.html);
