@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="projet.css">
 
 <video autoplay loop id="myVideo">
-    <source src="Desktop/Terror in Resonance - Bande annonce HD VOST hd.m4v" type="video/mp4">
-      <source src="Desktop/Terror in Resonance - Bande annonce HD VOST hd.ogg" type="video/ogg">
+    <source src="Terror in Resonance - Bande annonce HD VOST hd.m4v" type="video/mp4">
+      <source src="Terror in Resonance - Bande annonce HD VOST hd.ogg" type="video/ogg">
   </video>
   
   
@@ -17,42 +17,4 @@
     <button id="Fullscreen" onclick="openFullscreen();">Fullscreen Mode</button>
   </div>
 
-
-  <script>
-    var elem = document.getElementById("myVideo");
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
-    </script>
-  
-  <script>
-    //Get the video
-    var video = document.getElementById("myVideo");
-    
-    // Get the button
-    var btn = document.getElementById("myBtn");
-
-
-    // Pause and play the video, and change the button text
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-    </script>
-    
-
-
-
-
-    
+<script  src="serie3.js">  </script>
