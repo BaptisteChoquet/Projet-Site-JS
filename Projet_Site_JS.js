@@ -7,7 +7,7 @@
 //   }
 
 
-var name = prompt("Bonjour Cher visiteur. Comment t'apelles-tu ?");
+let name = prompt("Bonjour Cher visiteur. Comment t'appelles-tu ?");
 {
 document.write(name); 
 }

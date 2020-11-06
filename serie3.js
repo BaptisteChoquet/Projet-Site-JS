@@ -1,5 +1,5 @@
 
-    var elem = document.getElementById("myVideo");
+    let elem = document.getElementById("myVideo");
     function openFullscreen() {
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
@@ -9,10 +9,10 @@
         elem.msRequestFullscreen();
       }
     }
-    var video = document.getElementById("myVideo");
+    let video = document.getElementById("myVideo");
     
    
-    var btn = document.getElementById("myBtn");
+    let btn = document.getElementById("myBtn");
 
 
     
