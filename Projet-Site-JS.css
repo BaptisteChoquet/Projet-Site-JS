@@ -33,7 +33,7 @@ p {
     margin-top: 12em;
 }
 
-#myVideo { / video de la famille /
+#myVideo { /* video de la famille **/
     height: 52em;
     min-width: 100%;
 }
