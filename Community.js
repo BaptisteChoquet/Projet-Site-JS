@@ -1,16 +1,16 @@
-    //Get the video
+    
     var video = document.getElementById("myVideo");
     
-    // Get the button
+    
     var btn = document.getElementById("myBtn");
 
     let elem = document.getElementById("myVideo");
     function openFullscreen() {
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
+      } else if (elem.webkitRequestFullscreen) { 
         elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
+      } else if (elem.msRequestFullscreen) { 
         elem.msRequestFullscreen();
       }
     }
@@ -23,3 +23,13 @@ let inputStar = document.getElementsByClassName("rate");
 localStorage.setItem("rate", inputStar.value);
 
 localStorage.getItem("rate");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
