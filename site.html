@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="action_page.php" style="border:1px solid #ccc">
+<form style="border:1px solid #ccc">
     <div class="container">
         <style>
             #heading { color: white;}
@@ -14,13 +14,13 @@
       <h1 id="heading">Sign Up</h1>
       <hr>
   
-      <label for="email"><b id="heading">Email</b></label>
+      <label for="email"><b id="email">Email</b></label>
       <input type="text" placeholder="Enter Email" name="#" required>
   
-      <label for="psw"><b id="heading">Password</b></label>
+      <label for="psw"><b id="psw">Password</b></label>
       <input type="password" placeholder="Enter Password" name="#" required>
   
-      <label for="psw-repeat"><b id="heading">Repeat Password</b></label>
+      <label for="psw-repeat"><b id="psw-repeat">Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="#" required>
   
       <label>
@@ -30,11 +30,30 @@
       <p id="heading">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
   
       <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn"  onclick="window.location.href='Projet_Site_JS.html';" >Sign Up</button>
-        <button class="continuebtn" onclick="window.location.href='Projet_Site_JS.html';">Continue</button>
+        <button id= "CancelBtn" onclick="window.location.href='Projet_Site_JS.html';">Cancel</button>
+        <button id= "SignupBtn" onclick="passwordGood()">Sign Up</button>
+        <button id= "ContinueBtn" onclick="window.location.href='Projet_Site_JS.html';">Continue</button>
       </div>
     </div>
   </form>
 </body>
 </html>
+
+<script src="Site.js"></script>
+
+
+
+
+switch () {
+  case (psw1.length < 6) :
+  console.log("trop court")
+  window.alert("Mot de passe trop court")
+  break;
+  case (n!= 0) :
+  console.log("différent")
+  window.alert("Mot de Passe incorrect");
+  default :
+  console.log("bonMdP")
+  window.location= "signup.html";
+  break;
+}
