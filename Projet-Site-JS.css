@@ -2,19 +2,26 @@ body {
     background-color: #FCF9F8;
 }
 
+.logo {
+    margin-top: 7.2em;
+    margin-left: 2em;
+}
+/* 
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 6em;
     margin-left: 0.5em;
     margin-top: 3em;
     color: white;
-}
+} /
 
 h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 6em;
-    margin-left: 0.5em;
+    font-size: 5em;
+    margin-top: -2em;
+    margin-left: 3.5em;
     color: white;
+    top: -488px;
 
 }
 
@@ -22,11 +29,11 @@ p {
     font-family: "Montserrat", sans-serif;
     font-size: 2.4em;
     font-weight: lighter;
-    margin-left: 10em;
-    margin-top: 9em;
+    margin-left: 7em;
+    margin-top: 12em;
 }
 
-#myVideo { /* video de la famille /
+#myVideo { / video de la famille /
     height: 52em;
     min-width: 100%;
 }
@@ -54,7 +61,7 @@ p {
 
 #text {
     position: relative;
-    top: -852px;
+    top: -950px;
     left: 140px;
     font-size: 1em;
     color: white;
@@ -70,15 +77,10 @@ p {
     width: 38em;
 }
 
-.textinput {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2em;
-    text-align: center;
-}
-
 .texteinput {
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
+    margin-top: 3em;
 }
 
 .bouton {
@@ -91,7 +93,7 @@ p {
 .bloc-videos {
     display: flex;
     justify-content: space-around;
-    margin-top: 15em;
+    margin-top: 9em;
 
 }
 
@@ -110,4 +112,9 @@ p {
 #videoterror {
     height: 10em;
     width: 20em;
+}
+
+#nous {
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
 }

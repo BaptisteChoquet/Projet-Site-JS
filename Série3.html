@@ -1,4 +1,4 @@
-<!-- The video -->
+
 <link rel="stylesheet" href="projet.css">
 
 <video autoplay loop id="myVideo">
@@ -7,14 +7,27 @@
   </video>
   
   
-  <!-- Optional: some overlay text to describe the video -->
+  
   <div class="content">
     <h1>Terror in Resonance</h1>
     <p>Un jour d'été, une bombe explose soudainement au centre de Tokyo et les coupables de cet acte terroriste ne sont autres que deux jeunes adolescents se faisant appeler "Sphinx".
         Mais cet événement n'est que le prélude d'un énorme jeu lancé par ce même duo, impliquant la population japonaise toute entière... </p>
-    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="NextBtn" onclick="nextFunction()">Série précédente</button>
     <button id="myBtn" onclick="myFunction()">Pause</button>
     <button id="Fullscreen" onclick="openFullscreen();">Fullscreen Mode</button>
   </div>
+  <div class="rate">
+    <p>Notez cette série</p>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+</div>
 
 <script  src="serie3.js">  </script>
