@@ -15,8 +15,12 @@
       }
     }
 
+function previousFunction(){
+window.location = "Community.html";
+}
+
 function nextFunction(){
-    window.location = "lejeudeladame.html";
+    window.location = "Série3.html";
 }
 
 let inputStar = document.getElementsByClassName("rate");

@@ -89,6 +89,15 @@ body{
     cursor: pointer;
   }
 
+#PrevBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }  
 #Fullscreen {
     width: 200px;
     font-size: 18px;
@@ -110,6 +119,11 @@ body{
   }
 
 #NextBtn:hover {
+    background: #ddd;
+    color: black; 
+}
+
+#PrevBtn:hover {
     background: #ddd;
     color: black; 
 }
